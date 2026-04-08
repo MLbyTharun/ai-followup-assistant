@@ -1,0 +1,6 @@
+stramlit
+sqlalchemy
+pandas
+requests
+streamlit
+huggingface_hub
