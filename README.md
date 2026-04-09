@@ -63,7 +63,7 @@ This app:
 ## How to run it locally
 
 ```bash
-git clone https://github.com/your-username/ai-followup-assistant.git
+git clone https://github.com/MLbyTharun/ai-followup-assistant.git
 cd ai-followup-assistant
 pip install -r requirements.txt
 HUGGINGFACE_API_TOKEN=your_token_here streamlit run app.py
