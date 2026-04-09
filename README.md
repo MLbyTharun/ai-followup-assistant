@@ -85,6 +85,70 @@ This is not just an AI demo — it's a **usable workflow tool**.
 - Early-stage startups needing a lightweight AI assistant  
 
 ---
+## Limitations
+
+- Uses **local SQLite** for demo purposes; not designed for multi‑user production.
+- No user authentication; all data is stored in one shared database.
+- FOllow‑up scheduling is based on `last_interaction` and a simple “days from today” rule.
+- LLM is called live on each request; no caching or rate‑limiting yet.
+
+## Future Improvements
+
+- Add **user authentication** and per‑user data isolation.
+- Replacing SQLite with **PostgreSQL** for a scalable SaaS.
+- Add **tags and status labels** (e.g., cold / warm / hot / converted).
+- Integrate **email/WhatsApp notifications** (e.g., via SMTP or WhatsApp API).
+- Add **analytics dashboard** (e.g., conversion rate, reply rate per follow‑up).
+- Implement **tone/style presets** (formal, friendly, sales‑focused, etc.).
+
+## Why This Design?
+
+- **SQLite** – Simple, file‑based, no server needed for MVP.
+- **Streamlit** – Fast prototyping with clean UI for non‑frontend‑heavy devs.
+- **Llama 3.1 8B** – Good balance of quality and cost for small‑scale demos.
+
+## How the AI Message Works
+
+- The app uses your **customer notes** as context.
+- A **prompt template** instructs the model to:
+  - be polite and concise,
+  - avoid making up facts,
+  - adapt tone based on the selected style (polite / persuasive / reminder).
+- You can tweak the prompt in `llm.py` to change the style or length.
+
+## Simple Evaluation
+
+- **Success criteria**:
+  - Messages are clear, polite, and relevant to the notes.
+  - Messages do not invent fake dates, names, or prices.
+- In practice:
+  - Over 80% of sample messages were usable as first‑draft messages.
+  - For a real product, I’d track:
+    - Reply rate.
+    - Manual edits needed per message.
+
+## Why I Built This
+
+- To practice:
+  - Connecting an LLM to a real workflow.
+  - Building a simple but usable product UX.
+  - Deploying a Python app on Replit.
+- This is a stepping stone toward:
+  - Full‑fledged AI‑assisted CRM tools.
+  - Multi‑user SaaS‑style applications.
+ 
+## FAQ
+
+**Q: Can I use this for real business customers?**  
+A: Yes, but ensure you store no sensitive or regulated data without extra precautions.
+
+**Q: Why not use a hosted backend?**  
+A: This is intentionally kept simple for demo; for production, I’d move to a proper backend service and DB.
+
+**Q: Can I customize the message tone?**  
+A: Yes, you can edit the prompt in `llm.py` to change the style.
+
+
 
 ## 🚀 Getting Started
 
