@@ -10,7 +10,7 @@ An AI-powered follow-up system designed to help small businesses and sales teams
 
 ## 💡 Problem
 
-In fast-moving sales environments:
+In fast-moving sals environments:
 
 - Leads go cold due to missed follow-ups  
 - Valuable deals slip through the cracks  
@@ -24,7 +24,7 @@ Most small businesses don’t have sophisticated CRM automation — and even whe
 
 **AI Follow-Up Assistant** acts as a lightweight, intelligent CRM layer that:
 
-- Tracks customer interactions  
+- Tracks customer intractions  
 - Identifies overdue and upcoming follow-ups  
 - Generates **context-aware, personalized messages using LLMs**  
 
