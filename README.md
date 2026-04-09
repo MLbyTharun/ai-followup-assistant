@@ -3,7 +3,7 @@
 An AI-powered follow-up system designed to help small businesses and sales teams never miss a lead — and never write the same message twice.
 
 ## 🔗 Live Demo
-- 🌐 Streamlit App: [Try it here](#)
+- 🌐 Streamlit App: [Try it here](https://followup-ai-assistant--tharunabc.replit.app)
 - 🎥 Demo Video: [Watch here](#)
 
 ---
