@@ -1,4 +1,3 @@
-stramlit
 sqlalchemy
 pandas
 requests
