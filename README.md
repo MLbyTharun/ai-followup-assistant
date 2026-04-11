@@ -4,7 +4,6 @@ An AI-powered follow-up system designed to help small businesses and sales teams
 
 ## 🔗 Live Demo
 - 🌐 Streamlit App: [Try it here](https://followup-ai-assistant--tharunabc.replit.app)
-- 🎥 Demo Video: [Watch here](#)
 
 ---
 
